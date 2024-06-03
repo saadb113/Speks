@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .Orders{
+            display: flex;
+        }
+        .orderDiv{
+            padding: 1rem;
+            border: 1px solid black;
+            width: 600px;
+            margin: 1.5rem;
+
+        }
+        button{
+            margin: 1rem;
+            font-size: 1rem;
+            padding: 2rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<div class="w-[100%] h-[100vh] passwordVerification flex flex-col justify-center items-center">
+    <h1 class="text-[4rem]">Enter password</h1>
+
+    <input type="password" class="w-[20rem] h-[5rem] text-[2rem] border-[.2rem] border-[black] password">
+     <button onclick="Password()" class="px-[2rem] py-[1rem] mt-[1rem]">Enter</button>
+</div>
+
+<div class="Admin w-[100vw] hidden">
+
+<div class="flex mb-[10rem]">
+
+    <button onclick="Switch('orders')">Orders</button>
+    <button onclick="Switch('contacts')">Contact</button>
+</div>
+
+
+
+<div class="OrdersBox w-[100%]">
+<h1 class="text-[4rem] mb-[5rem]">
+    Orders
+</h1>
+    <div class="Orders flex flex-row-reverse justify-end flex-wrap">
+        
+        <!-- <img src="../api/Images/" alt=""> -->
+    </div>
+</div>
+
+<div class="CotactBox hidden flex-wrap">
+    <h1 class="text-[4rem] mb-[5rem]">
+        Contacts
+    </h1>
+    <div class="Contacts flex flex-row-reverse flex-wrap justify-end">
+        
+    </div>
+</div>
+</div>
+
+<body>
+    <script>
+const Password = ()=>{
+  const passval =   document.querySelector(".password").value
+  if(passval == "speks@786"){
+    document.querySelector(".passwordVerification").style.display = "none"
+    document.querySelector(".Admin").style.display = "block"
+  }else{
+    alert("Password not Matched")
+  }
+}
+
+
+
+
+        fetch("/upload")
+  .then(response => response.json())
+  .then(data => {
+    const Orders = document.querySelector(".Orders") 
+data.forEach(element => {
+    const template = document.createElement("template")
+    template.innerHTML = `<div class=" orderDiv">
+    <p class="mb-[1rem]">First Name : <span class="Fname">${element.Fname}</span></p>
+    <p class="mb-[1rem]">Last Name : <span class="Lname">${element.Lname}</span></p>
+    <p class="mb-[1rem]">Email : <span class="email">${element.email}</span></p>
+    <p class="mb-[1rem]">Number : <span class="number">${element.number}</span></p>
+    <p class="mb-[1rem]">Message : <span class="msg">${element.msg}</span></p>
+    <p class="mb-[1rem]">Type : <span class="type">${element.type}</span></p>
+    <p class="flex items-start">Image : <img src="/${element.img}" alt="" class="img" style="width: 500px;"></p>
+    </div>`    
+    Orders.append(template.content.firstElementChild)
+    console.log(element)
+});
+
+
+
+
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Request failed:', error);
+  });
+
+
+
+        fetch("/contact")
+  .then(response => response.json())
+  .then(data => {
+    const Contacts = document.querySelector(".Contacts") 
+data.forEach(element => {
+    const template = document.createElement("template")
+    template.innerHTML = `<div class=" orderDiv">
+    <p class="mb-[1rem]">First Name : <span class="Fname">${element.Fname}</span></p>
+    <p class="mb-[1rem]">Last Name : <span class="Lname">${element.Lname}</span></p>
+    <p class="mb-[1rem]">Email : <span class="email">${element.email}</span></p>
+    <p class="mb-[1rem]">Number : <span class="number">${element.number}</span></p>
+    <p class="mb-[1rem]">Message : <span class="msg">${element.msg}</span></p>
+    </div>`    
+    Contacts.append(template.content.firstElementChild)
+    console.log(element)
+});
+
+
+
+
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Request failed:', error);
+  });
+
+
+
+  const Switch = (value)=>{
+    if(value == "orders"){
+        document.querySelector(".CotactBox").style.display = "none"
+        document.querySelector(".OrdersBox").style.display = "block"
+    }else if(value == "contacts"){
+        document.querySelector(".CotactBox").style.display = "block"
+        document.querySelector(".OrdersBox").style.display = "none"
+
+    }
+  }
+    </script>
+</body>
+</html>

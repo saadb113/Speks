@@ -1,0 +1,12 @@
+
+module.exports = {
+  content: ['*'],
+  theme: {
+    extend: {},
+  },
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+

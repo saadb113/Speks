@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>About</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header class=" w-[100%] headermb">
+        <div class="flex justify-between w-[100%] mt-[1.3rem] pr-[2.2rem]" >
+         <img src="./img/Logo.png" alt="" class="ml-[2rem] w-[9rem] h-[4.6rem]">
+         <img src="./img/ham.png" alt=""  id="ham" class="w-[2.3rem] mt-[1.2rem] h-[2.3rem]" onclick="Navbar()">
+        </div>
+         <nav id="navbarmb" class="fixed h-[auto] activeNav pb-[5rem] activeNav absolute w-[100%]     mr-[6.5rem]" style="z-index: 100; background-color: rgb(42 22 63 / 90%); position: fixed !important;" >
+             <div class="relative " style="border-radius: 0 2rem 2rem 0;">
+             <div style="border-radius: 0 2rem 2rem 0;" class=" pt-[1.3rem] bg-white flex-col flex justify-start items-center w-[80%]">
+
+            <div class="w-[100%] flex justify-start items-center">
+             <img src="./img/Logo.png" alt="">
+            </div>
+             <div class="flex mb-[5rem] justify-start items-center w-[28.7rem] h-[40px] rounded-[.5rem] bg-[#01040505] border-b-[1px] border-[#09050D99]" style="min-height: 40px; border-bottom: 1px solid rgba(9, 5, 13, 0.60);">
+                 <img src="./img/search.png" alt="" class="w-[1.5rem] h-[1.5rem] mx-[2rem]">
+                 <input type="text" name="" id="" placeholder="Search"
+                     class="w-[80%] text-[1.6rem] text-[#09050D99] bg-transparent border-[none]"
+                     style="outline: none; ">
+             </div>
+             <button href="" 
+                 class="hover mb-[3rem] rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[8rem] h-[4rem] bg-[#2A163F]" style="width: 8rem !important; min-height: 4rem !important;">
+             <div class="div">Home</button>
+             <a href="./services.html"
+                 class="rounded-[.5rem] mb-[3rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Services</a>
+             <a href="./about.html"
+                 class="rounded-[.5rem] mb-[3rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">About</a>
+             <a href="./contact.html"
+                 class="rounded-[.5rem] mb-[3rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Contact</a>
+            
+                 <a href="./order.html"
+                 class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F]  " style="width: 11.6rem !important; min-height: 4rem !important;"><div class="div">Order
+                 Now</div></a>
+                 <img src="./img/logoNav.png" class="mt-[13.2rem] mb-[13.3rem]" alt="">
+                 
+             </div>
+             <button onclick="Navbar()" class="absolute top-[50vh] right-[2.4rem] text-[1.3rem] text-white flex justify-center items-center">Back <svg class="NavbarBackArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8.91 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91 4.08008" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></button>
+             </div>
+
+         </nav>
+         
+     </header>
+    <section class="section1 flex justify-between">
+
+        <div class="container">
+            <header class="w-[100%] header">
+                <div class="ham" id="ham" style="z-index: 100;">
+<div class="line"></div>
+<div class="line my-[1rem]"></div>
+<div class="line"></div>
+                </div>
+                <nav id="navbar" class=" flex justify-end items-center mt-[2rem] mr-[6.5rem] ">
+                    <img src="./img/Logo.png" class="mr-[9rem] w-[11.8rem] h-[6rem] "  alt="">
+                    <a href="./about.html"
+                        class="w-[10rem] h-[5rem] flex justify-center items-center rounded-[.5rem] mr-[4.4rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Home</a>
+                        <a href="./services.html"
+                        class="w-[11.8rem] h-[5rem] flex justify-center items-center rounded-[.5rem] mr-[4.6rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Services</a>
+                        <button href="" 
+                            class="hover rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[10rem] h-[5rem] bg-[#2A163F] mr-[4.4rem]">
+                        <div class="div">About</button>
+                    
+                    <a href="./contact.html"
+                        class="w-[11.8rem] h-[5rem] flex justify-center items-center rounded-[.5rem] mr-[4.4rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Contact</a>
+                    <div class="relative flex justify-start items-center w-[48.9rem] h-[5rem] rounded-[.5rem] bg-[#01040505] " style="border-bottom: 1px solid rgba(9, 5, 13, 0.6);">
+                        <img src="./img/search.png" alt="" class="w-[1.8rem] h-[1.8rem] mx-[2rem]">
+                        <input type="text" name="" id=""  placeholder="Search"
+                            class=" text-[1.6rem] absolute w-[100%] h-[100%] pl-[5.81rem] text-[#09050D99] bg-transparent border-[none]"
+                            >
+                    </div>
+                    <a href="./order.html"
+           
+                         class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F] ml-[6.5rem] " style="outline: .5px black;"><div class="div">Order
+                         Now</div></a>
+                </nav>
+                
+            </header>
+            <div class="firstrow flex w-[142rem] justify-between mt-[7rem] ml-[17.7rem]">
+                <div class="mr-[21.2rem] ml-[1.6rem]">
+                    <h2 class="text-[6rem]  text-[#09050D] font-[400]"
+                        style="text-transform: uppercase;">
+                        Who We <span class="font-[600]"> <br>Are</span>
+                    </h2>
+                    <p class="text-[2rem] w-[48.2rem] leading-[3rem]  text-[#09050D] font-[400]">Your Top Choice for Quality Digitizing, Vector Art, and Custom Patches</p>
+                </div>
+                <div >
+                    <img src="./img/about/1.png" class="w-[42.2rem] h-[31.1rem]" alt="">
+                </div>
+            </div>
+            <div class="flex w-[142rem]  mt-[4.1rem] ml-[7.9rem]">
+                <div>
+                    <img src="./img/about/2.png" class="w-[41.6rem] h-[33.7rem]" alt="">
+                </div>
+                <div class="ml-[10.7rem]">
+
+                    <p class="text-[3rem] mt-[4.3rem] w-[88.7rem] leading-[4.5rem]  text-[#09050D] font-[400]">Explore
+                        SPEKS The Exceptional <span class="font-[600]"> Embroidery Digitizing </span> and<span
+                            class="font-[600]"> Graphic Design</span> Services to Meet Your Every Need</p>
+                            <a href="./contact.html"
+                            class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F] mt-[2rem] "><div class="div">Contact Us </div></a>
+                </div>
+
+
+            </div>
+            <div class="flex w-[142rem]  justify-start  relative top-[-10rem] mb-[-5.2rem] ml-[8.1rem] ">
+
+                <div class="ml-[10.7rem] flex items-end">
+       <a href="" class="flex mr-[6rem] text-[2rem] leading-[4rem] text-[#0C080F] "><img src="./img/fb.png" class="mr-[1rem] w-[4rem] h-[4rem]" alt="">Facebook</a>
+       <a href="" class="mr-[6rem] flex text-[2rem] leading-[4rem] text-[#0C080F] "><img src="./img/ig.png" class="w-[4rem] h-[4rem] mr-[1rem] " alt=""> Instagram</a>
+       <a href="" class=" text-[2rem] leading-[4rem] text-[#0C080F] flex"><img src="./img/yt.png" class=" w-[4rem] h-[4rem] mr-[1rem] " alt="">Youtube</a>
+
+                </div>
+                <div>
+                    <img src="./img/about/3.png" class=" w-[53.9rem] ml-[25.3rem] h-[31rem]" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="w-[17.7rem] h-[auto] sidebar" style="background: url('./img/side.png'); background-size:cover; background-position: center;">
+
+        </div>
+    </section>
+    
+    
+
+
+<!-- section4  -->
+<section class="section4 h-[auto] pb-[10rem] w-[100%] aboutSec4" style="background: none !important;">
+    <div class="top flex m-auto w-[156.7rem] mt-[10rem]">
+<div>
+    <p class="text-[2rem] leading-[3rem]  text-[#2A163F]">
+        <span class="text-[#01040580]">02 / </span>About
+    </p>
+    <h2 class="text-[8rem] leading-[12rem]  text-[##2A163F] font-[400]"
+    style="text-transform: uppercase;">
+    Speks the<span class="font-[600]"> <br>embroiderers</span>
+</h2>
+</div>
+
+<div class="ml-[17.4rem]">
+    <p class=" mb-[2rem] font-[600]  text-[3rem] leading-[4.5rem]  text-[#2A163F]">
+        We Are SPEKS The Embroiderers
+    </p>
+    <p class="w-[80.7rem]  text-[2rem] leading-[3rem]  text-[#2A163F]">
+        At SPEKS, we specialize in providing our clients with top-notch digitizing, vector art, and custom patches that are tailored to their unique needs. Our team is made up of experienced and highly skilled professionals who are dedicated to ensuring your complete satisfaction with our services.
+    </p>
+    <p class="w-[80.7rem] mt-[2rem]  text-[2rem] leading-[3rem]  text-[#2A163F]">
+        What sets us apart from other embroidery companies is our commitment to global service excellence. We understand the importance of delivering quality results in a timely manner, which is why we offer same-day delivery on all of our projects.
+    </p>
+ 
+</div>
+</div>
+    <div class="top flex m-auto w-[156.7rem] mt-[10rem]">
+<div>
+    
+    <h2 class="text-[4.5rem] leading-[7.5rem] w-[61.9rem]  text-[##2A163F] font-[500]"
+    style="text-transform: uppercase;">
+    Look no further than SPEKS The Embroiderers, a leading Pakistan-based company that is paving the way for the future of embroidery.
+</h2>
+</div>
+
+<div class="ml-[15.4rem]">
+    <p class=" mb-[2rem] font-[600] text-[3rem] leading-[4.5rem]  text-[#2A163F]">
+        Your Reliable and Trustworthy Partner for Embroidery Projects with 10,000+ Completed Projects and Expert Brand Specialists  
+    </p>
+    <p class="w-[80.7rem]  text-[2rem] leading-[3rem]  text-[#2A163F]">
+        Our Brand Specialists are always on hand to provide honest and reliable guidance, drawing on their wide range of knowledge and experience to ensure the best advice available. With more than 10,000+ completed projects to date, we remain dedicated to delivering further results with great optimism.</p>
+    <p class="w-[80.7rem] mt-[2rem]  text-[2rem] leading-[3rem]  text-[#2A163F]">
+        So if you're looking for a reliable and trustworthy embroidery company, choose SPEKS The Embroiderers. We guarantee you won't be disappointed. Contact us today to learn more about our services and how we can help bring your vision to life. </p>
+        <a href="./contact.html"
+        class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F] mt-[2rem]"><div class="div">Contact Now</div></a>
+ 
+</div>
+</div>
+
+</section>
+
+
+<!-- section5  -->
+<section class="section5">
+    <div class="container services flex pt-[10rem] w-[157.6rem] m-auto">
+        <div>
+            <p class="text-[2rem] leading-[3rem]  text-[#2A163F]">
+                <span class="text-[#01040580]">04 / </span>Testimonials
+            </p>
+            <h2 class="text-[8rem] leading-[12rem]  text-[##2A163F] font-[400]"
+            style="text-transform: uppercase;">
+            Check Out Our<span class="font-[600]"> <br>Reviews</span>
+            <p class="text-[3rem] leading-[4.5rem] mt-[2rem]  text-[#2A163F]">
+                Discover What Our Customers are Saying    
+            </p>
+        </h2>
+        </div>
+        <div class="ml-[11.5rem] swiper min-w-[78.1rem] relative">
+            <div class="flex items-center">
+                <img src="./img/reviews.png" class="w-[9.75rem] h-[1.2rem]" alt="">
+                <p class="ml-[1rem] text-[1.2rem] uppercase leading-[2.4rem] font-[600] text-[#2A163F]" style="letter-spacing: 0.515em;">Scroll to see more</p>
+            </div>
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-wrapper  flex " id="slider" style="cursor: pointer;">
+                <div class="swiper-slide">
+                    <h2 class="flex items-center text-[2rem] font-[500] leading-[3rem] text-[#2A163F]">Debbie Orchad <img src="./img/verif.png" class="ml-[.5rem] w-[1.2rem] h-[1.2rem]" alt=""></h2>
+                    <img src="./img/stars.png" class="w-[12rem] h-[2.1rem] mt-[1rem] mb-[2rem]" alt="">
+                    <p class="text-[1.8rem] font-[500] leading-[2.7rem] w-[78.1rem] text-[#2A163F]">I recently had the pleasure of using SPEKS for digitization and vectorization services, and I must say, they exceeded my expectations every time! Not only do they offer a fantastic selection of services to choose from, but the quality of their work is top-notch. The team at SPEKS is incredibly friendly and easy to work with, which made the whole experience that much better. Overall, I highly recommend SPEKS for anyone in need of digital design services. You won't be disappointed!
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="flex items-center text-[2rem] font-[500] leading-[3rem] text-[#2A163F]">Debbie Orchad <img src="./img/verif.png" class="ml-[.5rem] w-[1.2rem] h-[1.2rem]" alt=""></h2>
+                    <img src="./img/stars.png" class="w-[12rem] h-[2.1rem] mt-[1rem] mb-[2rem]" alt="">
+                    <p class="text-[1.8rem] font-[500] leading-[2.7rem] w-[78.1rem] text-[#2A163F]">I recently had the pleasure of using SPEKS for digitization and vectorization services, and I must say, they exceeded my expectations every time! Not only do they offer a fantastic selection of services to choose from, but the quality of their work is top-notch. The team at SPEKS is incredibly friendly and easy to work with, which made the whole experience that much better. Overall, I highly recommend SPEKS for anyone in need of digital design services. You won't be disappointed!
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="flex items-center text-[2rem] font-[500] leading-[3rem] text-[#2A163F]">Debbie Orchad <img src="./img/verif.png" class="ml-[.5rem] w-[1.2rem] h-[1.2rem]" alt=""></h2>
+                    <img src="./img/stars.png" class="w-[12rem] h-[2.1rem] mt-[1rem] mb-[2rem]" alt="">
+                    <p class="text-[1.8rem] font-[500] leading-[2.7rem] w-[78.1rem] text-[#2A163F]">I recently had the pleasure of using SPEKS for digitization and vectorization services, and I must say, they exceeded my expectations every time! Not only do they offer a fantastic selection of services to choose from, but the quality of their work is top-notch. The team at SPEKS is incredibly friendly and easy to work with, which made the whole experience that much better. Overall, I highly recommend SPEKS for anyone in need of digital design services. You won't be disappointed!
+                    </p>
+                </div >
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<footer class="mt-[21rem]">
+    <img src="./img/logobt.png" class="m-auto w-[156.7rem] h-[12.7rem]" alt="">
+
+
+    <div class="middle flex w-[156.6rem] justify-between m-auto items-center mt-[6rem]">
+        <div>
+            <p class="text-[1.8rem] leading-[2.7rem] flex items-center text-[#010405]"><img src="./img/ph.png" class="w-[3rem] mr-[3rem]" alt=""> 0208 205 667</p>
+            <p class="text-[1.8rem] leading-[2.7rem] flex items-center mt-[2rem] text-[#010405]"><img src="./img/mail.png" class="w-[3rem] mr-[3rem]" alt=""> writeyouremail@gmail.com</p>
+        </div>
+        <div class="flex">
+            <a href="" class="text-[1.4rem] flex flex-col items-center"><img src="./img/fb.png" class="mb-[.7rem] w-[4rem]" alt="">Facebook</a>
+            <a href="" class="mx-[12rem] text-[1.4rem] flex flex-col items-center"><img src="./img/ig.png" class="mb-[.7rem] w-[4rem]" alt="">Instagram</a>
+            <a href="" class="text-[1.4rem] flex flex-col items-center"><img src="./img/yt.png" class="mb-[.7rem] w-[4rem]" alt="">Youtube</a>
+        </div>
+        <div class="flex">
+            <div class="flex flex-col items-center justify-center">
+                <a href="" class="text-[1.8rem] leading-[2.7rem] mb-[2rem] text-[#2A163F]">Privacy Policy</a>
+                <a href="./about.html" class="text-[1.8rem] leading-[2.7rem] text-[#2A163F]">About</a>
+            </div>
+            <div class="ml-[6rem] flex flex-col items-center justify-center">
+                <a href="" class="text-[1.8rem] leading-[2.7rem] mb-[2rem] text-[#2A163F]">Terms & Conditions</a>
+                <a href="./contact.html" class="text-[1.8rem] leading-[2.7rem] text-[#2A163F]">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom flex w-[156.6rem] justify-between m-auto mt-[10rem]"  >
+        <div>
+            <p class="text-[2rem] leading-[3rem] uppercase text-[#2A163F]">
+                Get Latest Updates
+            </p>
+            <h2 class="text-[8rem] leading-[12rem]  text-[##2A163F] font-[400]"
+            style="text-transform: uppercase;">
+            Subscribe<span class="font-[600]"> <br>Newsletter</span>
+           
+        </h2>
+        </div>
+
+        <form action="" class="flex flex-col justify-center items-center">
+            <div class="flex ">
+                <input style="border-bottom: 1px solid rgba(9, 5, 13, 0.60);" class="  flex text-[1.6rem] text-[#09050D99]  border-[none] justify-start items-center pl-[3rem] w-[33.2rem] h-[5rem] rounded-[.5rem] bg-[#0000001A]" placeholder="Full Name">
+                <input style="border-bottom: 1px solid rgba(9, 5, 13, 0.60);" class="ml-[4rem] flex text-[1.6rem] text-[#09050D99]  border-[none] justify-start items-center pl-[3rem] w-[33.2rem] h-[5rem] rounded-[.5rem] bg-[#0000001A]" placeholder="Phone Number (Optional)" >
+                   
+            </div>
+            
+            <input style="border-bottom: 1px solid rgba(9, 5, 13, 0.60);" class=" mt-[2rem] mb-[2.5rem] flex justify-start items-center pl-[3rem] w-[70.4rem] h-[5rem] rounded-[.5rem] bg-[#0000001A] text-[1.6rem] text-[#09050D99] border-[none]" placeholder="Enter Email Address">
+                   
+               
+            <button href=""
+                        class="rounded-[.5rem] text-white text-[1.6rem] hover leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[5rem] bg-[#010405] mr-[7.6rem]"><div class="div">Subscribe</button>
+        </form>
+    </div>
+</footer>
+<script>
+     const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+
+
+const Navbar = ()=>{
+    document.getElementById("navbarmb").classList.toggle("activeNav")
+    console.log(document.getElementById("navbarmb").classList)
+}
+</script>
+</body>
+
+</html>

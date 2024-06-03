@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="main.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Services</title>
+    </head>
+<body>
+    <div onclick="OpenImageModal('adasd', false)" class="modal fixed bg-[#00000052] w-[100%] h-[100vh] flex justify-center items-center hidden top-0" style="z-index: 100;">
+        <img src="" alt="" class="w-[50%]">
+    </div>
+    <header class=" w-[100%] headermb">
+        <div class="flex justify-between w-[100%] mt-[1.3rem] pr-[2.2rem]" >
+         <img src="./img/Logo.png" alt="" class="ml-[2rem] w-[9rem] h-[4.6rem]">
+         <img src="./img/ham.png" alt=""  id="ham" class="w-[2.3rem] mt-[1.2rem] h-[2.3rem]" onclick="Navbar()">
+        </div>
+         <nav id="navbarmb" class="fixed h-[auto] activeNav pb-[5rem] activeNav absolute w-[100%]     mr-[6.5rem]" style="z-index: 100; background-color: rgb(42 22 63 / 90%); position: fixed !important;" >
+             <div class="relative " style="border-radius: 0 2rem 2rem 0;">
+             <div style="border-radius: 0 2rem 2rem 0;" class=" pt-[1.3rem] bg-white flex-col flex justify-start items-center w-[80%]">
+
+            <div class="w-[100%] flex justify-start items-center">
+             <img src="./img/Logo.png" alt="">
+            </div>
+             <div class="flex mb-[5rem] justify-start items-center w-[28.7rem] h-[40px] rounded-[.5rem] bg-[#01040505] border-b-[1px] border-[#09050D99]" style="min-height: 40px; border-bottom: 1px solid rgba(9, 5, 13, 0.60);">
+                 <img src="./img/search.png" alt="" class="w-[1.5rem] h-[1.5rem] mx-[2rem]">
+                 <input type="text" name="" id="" placeholder="Search"
+                     class="w-[80%] text-[1.6rem] text-[#09050D99] bg-transparent border-[none]"
+                     style="outline: none; ">
+             </div>
+             <a href="./services.html"
+                 class="rounded-[.5rem] mb-[3rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Home</a>
+             <button href="" 
+                 class="hover mb-[3rem] rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[8rem] h-[4rem] bg-[#2A163F]" style="width: 8rem !important; min-height: 4rem !important;">
+             <div class="div">Services</button>
+             
+             <a href="./about.html"
+                 class="rounded-[.5rem] mb-[3rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">About</a>
+             <a href="./contact.html"
+                 class="rounded-[.5rem] mb-[3rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Contact</a>
+            
+                 <a href="./order.html"
+                 class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F]  " style="width: 11.6rem !important; min-height: 4rem !important;"><div class="div">Order
+                 Now</div></a>
+                 <img src="./img/logoNav.png" class="mt-[13.2rem] mb-[13.3rem]" alt="">
+                 
+             </div>
+             <button onclick="Navbar()" class="absolute top-[50vh] right-[2.4rem] text-[1.3rem] text-white flex justify-center items-center">Back <svg class="NavbarBackArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8.91 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91 4.08008" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></button>
+             </div>
+
+         </nav>
+         
+     </header>
+    <section class="section1 flex justify-between">
+
+<div class="container">
+    <header class="w-[100%] header">
+        <div class="ham" id="ham" style="z-index: 100;">
+<div class="line"></div>
+<div class="line my-[1rem]"></div>
+<div class="line"></div>
+        </div>
+        <nav id="navbar" class=" flex justify-end items-center mt-[2rem] mr-[6.5rem] ">
+            <img src="./img/Logo.png" class="mr-[9rem] w-[11.8rem] h-[6rem] "  alt="">
+            <a href="./services.html"
+                class="w-[11.8rem] h-[5rem] flex justify-center items-center rounded-[.5rem] mr-[4.6rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Home</a>
+            <button href="" 
+                class="hover rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[10rem] h-[5rem] bg-[#2A163F] mr-[4.4rem]">
+            <div class="div">Services</button>
+            
+            <a href="./about.html"
+                class="w-[10rem] h-[5rem] flex justify-center items-center rounded-[.5rem] mr-[4.4rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">About</a>
+            <a href="./contact.html"
+                class="w-[11.8rem] h-[5rem] flex justify-center items-center rounded-[.5rem] mr-[4.4rem] text-[#2A163F] text-[1.6rem] leadng-[2.4rem] tracking-[8%] ">Contact</a>
+            <div class="relative flex justify-start items-center w-[48.9rem] h-[5rem] rounded-[.5rem] bg-[#01040505] " style="border-bottom: 1px solid rgba(9, 5, 13, 0.6);">
+                <img src="./img/search.png" alt="" class="w-[1.8rem] h-[1.8rem] mx-[2rem]">
+                <input type="text" name="" id=""  placeholder="Search"
+                    class=" text-[1.6rem] absolute w-[100%] h-[100%] pl-[5.81rem] text-[#09050D99] bg-transparent border-[none]"
+                    >
+            </div>
+            <a href="./order.html"
+   
+                 class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F] ml-[6.5rem] " style="outline: .5px black;"><div class="div">Order
+                 Now</div></a>
+        </nav>
+        
+    </header>
+    <div class="firstrow flex w-[142rem] mt-[7rem] ml-[17.7rem]">
+        <div class="mr-[21.2rem] ml-[1.6rem]">
+            <h2 class="text-[6rem]  text-[#09050D] font-[400]"
+                style="text-transform: uppercase;">
+                Experience <span class="font-[600]"> <br>the Ease</span>
+            </h2>
+            <p class="text-[2rem] w-[78.5rem] leading-[3rem]  text-[#09050D] font-[400]">Boost Your Branding Efforts with SPEKS The Embroiderers' Premium Services and Tailored Products, Perfect for Elevating Your Marketing Campaigns and Events!</p>
+        </div>
+        <div >
+            <img src="./img/services/2.png" class="w-[42.2rem] h-[31.1rem]" alt="">
+        </div>
+    </div>
+    <div class="flex w-[142rem]  mt-[4.1rem] ml-[7.9rem]">
+        <div>
+            <img src="./img/services/1.png" class="w-[41.6rem] h-[33.7rem]" alt="">
+        </div>
+        <div class="ml-[10.7rem]">
+
+            <p class="text-[3rem] mt-[4.3rem] w-[88.7rem] leading-[4.5rem]  text-[#09050D] font-[400]">Explore
+                SPEKS The Exceptional <span class="font-[600]"> Embroidery Digitizing </span> and<span
+                    class="font-[600]"> Graphic Design</span> Services to Meet Your Every Need</p>
+                    <a href="./contact.html"
+                    class="hover flex justify-center items-center rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[6rem] bg-[#2A163F] mt-[2rem] "><div class="div">Contact Us </div></a>
+        </div>
+
+
+    </div>
+    <div class="flex w-[142rem]  justify-start  relative top-[-10rem] mb-[-5.2rem] ml-[8.1rem] ">
+
+        <div class="ml-[10.7rem] flex items-end">
+<a href="" class="flex mr-[6rem] text-[2rem] leading-[4rem] text-[#0C080F] "><img src="./img/fb.png" class="mr-[1rem] w-[4rem] h-[4rem]" alt="">Facebook</a>
+<a href="" class="mr-[6rem] flex text-[2rem] leading-[4rem] text-[#0C080F] "><img src="./img/ig.png" class="w-[4rem] h-[4rem] mr-[1rem] " alt=""> Instagram</a>
+<a href="" class=" text-[2rem] leading-[4rem] text-[#0C080F] flex"><img src="./img/yt.png" class=" w-[4rem] h-[4rem] mr-[1rem] " alt="">Youtube</a>
+
+        </div>
+        <div>
+            <img src="./img/services/3.png" class=" w-[53.9rem] ml-[25.3rem] h-[31rem]" alt="">
+        </div>
+
+    </div>
+</div>
+        <div class="w-[13rem] h-[108.1rem] sidebar" style="background: url('./img/services/side.png'); background-size:cover; background-position: center;">
+
+        </div>
+
+
+        <div>
+            
+        </div>
+    </section>
+<div class="Samplebtn flex justify-end items-center mr-[18.1rem] mt-[11.2rem]">
+    <a href="./services.html#DigitizingBox" class="hover rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[10rem] h-[5rem] bg-[#2A163F] " ><div class="div">Digitizing</div></a>
+    <a href="./vectorart.html#VectorBox" class="flex justify-center items-center mx-[2rem] text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[10rem] h-[5rem]">
+        Vector Art
+    </a>
+    <a href="./custompatch.html#CustomBox" class="flex justify-center items-center text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[15rem] h-[5rem]">Custom Patches</a>
+</div>
+
+    <!-- section2  -->
+    <section class="section2 sec2Sample h-[137.6rem] w-[100%] " id="DigitizingBox" style="background: url('./img/services/sec2.png'); background-position: center; background-size: cover;">
+        <div class="flex m-auto w-[156.7rem] mt-[10rem] mb-[11rem]">
+    <div>
+        <p class="text-[2rem] leading-[3rem]  text-[#2A163F]">
+            <span class="text-[#01040580]">02 / </span>Gallery
+        </p>
+        <h2 class="text-[8rem] leading-[12rem]  text-[##2A163F] font-[400]"
+        style="text-transform: uppercase;">
+        Discover Our<span class="font-[600]"> <br>Samples</span>
+    </h2>
+    <p class="text-[3rem] leading-[4.5rem] mt-[2rem]  text-[#2A163F]">
+        Browse Through Our Impressive Samples
+    </p>
+    </div>
+    <div class="SamplebtnMb  justify-center mb-[4rem] items-center flex-row mt-[11.2rem]" style="flex-direction: row !important;">
+        <a href="./services.html#DigitizingBox" class="hover rounded-[.5rem] text-white text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[10rem] h-[5rem] bg-[#2A163F] " style="width: 24rem;" ><div class="div">Digitizing</div></a>
+        <a href="./vectorart.html#VectorBox" class="flex justify-center items-center mx-[2rem] text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[10rem] digbutton h-[5rem]" style="width: 24rem;">
+            Vector Art
+        </a>
+        <a href="./custompatch.html#CustomBox" class="flex justify-center items-center text-[1.6rem] leadng-[2.4rem] tracking-[8%] w-[15rem] h-[5rem] digbutton" style="width: 24rem;">Custom Patches</a>
+    </div>
+    <div class="ml-[18rem]">
+        <h2 class=" text-[3rem] leading-[4.5rem] font-[600] text-[#2A163F]">WHAT IS DIGITIZING?</h2>
+        <p class="w-[80.7rem]  text-[2rem] leading-[3rem]  text-[#2A163F]">
+            Digitizing is a crucial process in the embroidery industry, as it involves transforming artwork into a digital format for embroidery machines to understand and execute. While it may not be an automated process, skilled digitizing is an art form that enables the creation of intricate designs with unique features like bars and extra stitches.
+        </p>
+       
+    </div>
+    </div>
+   
+    <div class="parent Samples" >
+        <div class=" div1 w-[100%] h-[20rem]" onclick="Box('div1')" style=" background-position: center; background-size: cover;" id="div1" > 
+            <img src="./img/services/s1.png" class="w-[100%] h-[100%] thumbnail" alt="">
+            <div class="flex justify-between">
+                <div  id="img1" style="background: url('./img/services/boxes/ser11.png');" class="w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed1" alt="">
+                    <img src="./img/services/boxes/side11.png" onclick="Zoom('img1', './img/services/boxes/ser11.png');Zoomimg('zoomed1', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                    <img src="./img/services/boxes/side12.png" onclick="Zoom('img1', './img/services/boxes/ser12.png');Zoomimg('zoomed1', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div2')" style=" background-position: center; background-size: cover;" id="div2" > 
+            <img src="./img/services/s2.png" class="w-[100%] h-[100%] thumbnail" alt="">
+            <div class="flex justify-between">
+                <div  id="img2" style="background: url('./img/services/boxes/ser21.png');" class="w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed2" alt="">
+
+                    <img src="./img/services/boxes/side21.png" onClick="Zoom('img2', './img/services/boxes/ser21.png');Zoomimg('zoomed2', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                    <img src="./img/services/boxes/side22.png" onClick="Zoom('img2', './img/services/boxes/ser22.png');Zoomimg('zoomed2', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div3')" style=" background-position: center; background-size: cover;" id="div3" > 
+            <img src="./img/services/s3.png" class="w-[100%] h-[100%] thumbnail" alt="">
+            <div class="flex justify-between">
+                <div  id="img3" style="background: url('./img/services/boxes/ser31.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed3" alt="">
+
+                    <img src="./img/services/boxes/side31.png" onClick="Zoom('img3', './img/services/boxes/ser31.png');Zoomimg('zoomed3', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                    <img src="./img/services/boxes/side32.png" onClick="Zoom('img3', './img/services/boxes/ser32.png');Zoomimg('zoomed3', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div4')" style=" background-position: center; background-size: cover;" id="div4" > 
+            <img src="./img/services/s4.png " class="w-[100%] h-[100%] thumbnail" alt="">
+
+            <div class="flex justify-between">
+                <div  id="img4" style="background: url('./img/services/boxes/ser41.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative ">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed4" alt="">
+
+                    <img src="./img/services/boxes/side41.png" onClick="Zoom('img4', './img/services/boxes/ser41.png');Zoomimg('zoomed4', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                    <img src="./img/services/boxes/side42.png" onClick="Zoom('img4', './img/services/boxes/ser42.png');Zoomimg('zoomed4', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div5')" style=" background-position: center; background-size: cover;" id="div5" > 
+            <img src="./img/services/s5.png" class="w-[100%] h-[100%] thumbnail" alt="">
+            <div class="flex justify-between">
+                <div  id="img5" style="background: url('./img/services/boxes/ser51.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed5" alt="">
+
+                    <img src="./img/services/boxes/side51.png" onClick="Zoom('img5', './img/services/boxes/ser51.png');Zoomimg('zoomed5', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                    <img src="./img/services/boxes/side52.png" onClick="Zoom('img5', './img/services/boxes/ser52.png');Zoomimg('zoomed5', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" div1 w-[100%] h-[20rem]" onclick="Box('div6')" style=" background-position: center; background-size: cover;" id="div6" >
+             <img src="./img/services/s6.png" class="w-[100%] h-[100%] thumbnail" alt="">
+             <div class="flex justify-between">
+                 <div  id="img6" style="background: url('./img/services/boxes/ser61.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                 <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed6" alt="">
+
+                    <img src="./img/services/boxes/side61.png" onClick="Zoom('img6', './img/services/boxes/ser61.png');Zoomimg('zoomed6', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                    <img src="./img/services/boxes/side62.png" onClick="Zoom('img6', './img/services/boxes/ser62.png');Zoomimg('zoomed6', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                </div>
+            </div>
+            </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div7')" style=" background-position: center; background-size: cover;" id="div7" >
+             <img src="./img/services/s7.png" class="w-[100%] h-[100%] thumbnail" alt="">
+             <div class="flex justify-between">
+                <div  id="img7" style="background: url('./img/services/boxes/ser71.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed7" alt="">
+
+                   <img src="./img/services/boxes/side71.png" onClick="Zoom('img7', './img/services/boxes/ser71.png');Zoomimg('zoomed7', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side72.png" onClick="Zoom('img7', './img/services/boxes/ser72.png');Zoomimg('zoomed7', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+            </div>
+        <div class=" div1 w-[100%] h-[20rem]" onclick="Box('div8')" style=" background-position: center; background-size: cover;" id="div8" > 
+            <img src="./img/services/s8.png" class="w-[100%] h-[100%] thumbnail " alt="">
+            <div class="flex justify-between">
+                <div  id="img8" style="background: url('./img/services/boxes/ser81.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed8" alt="">
+
+                   <img src="./img/services/boxes/side81.png" onClick="Zoom('img8', './img/services/boxes/ser81.png');Zoomimg('zoomed8', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side82.png" onClick="Zoom('img8', './img/services/boxes/ser82.png');Zoomimg('zoomed8', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div9')" style=" background-position: center; background-size: cover;" id="div9" >
+             <img src="./img/services/s9.png" class="w-[100%] h-[100%] thumbnail" alt="">
+             <div class="flex justify-between">
+                <div  id="img9" style="background: url('./img/services/boxes/ser91.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed9" alt="">
+
+                   <img src="./img/services/boxes/side91.png" onClick="Zoom('img9', './img/services/boxes/ser91.png');Zoomimg('zoomed9', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side92.png" onClick="Zoom('img9', './img/services/boxes/ser92.png');Zoomimg('zoomed9', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+            </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div10')" style=" background-position: center; background-size: cover;" id="div10" >
+            <img src="./img/services/s10.png" class="w-[100%] h-[100%] thumbnail" alt="">
+
+             <div class="flex justify-between">
+                <div  id="img10" style="background: url('./img/services/boxes/ser10-1.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative ">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed10" alt="">
+
+                   <img src="./img/services/boxes/side10-1.png" onClick="Zoom('img10', './img/services/boxes/ser10-1.png');Zoomimg('zoomed10', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side10-2.png" onClick="Zoom('img10', './img/services/boxes/ser10-2.png');Zoomimg('zoomed10', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+         </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div11')" style=" background-position: center; background-size: cover;" id="div11" >
+            <img src="./img/services/s11.png" class="w-[100%] h-[100%] thumbnail" alt=""> 
+            <div class="flex justify-between">
+                <div  id="img11" style="background: url('./img/services/boxes/ser11-1.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative" >
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed11" alt="">
+
+                   <img src="./img/services/boxes/side11-1.png" onClick="Zoom('img11', './img/services/boxes/ser11-1.png');Zoomimg('zoomed11', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side11-2.png" onClick="Zoom('img11', './img/services/boxes/ser11-2.png');Zoomimg('zoomed11', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div12')" style=" background-position: center; background-size: cover;" id="div12" >
+            <img src="./img/services/s12.png" class="w-[100%] h-[100%] thumbnail" alt="">
+            <div class="flex justify-between">
+                <div  id="img12" style="background: url('./img/services/boxes/ser12-1.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed12" alt="">
+
+                   <img src="./img/services/boxes/side12-1.png" onClick="Zoom('img12', './img/services/boxes/ser12-1.png');Zoomimg('zoomed12', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side12-2.png" onClick="Zoom('img12', './img/services/boxes/ser12-2.png');Zoomimg('zoomed12', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+        </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div13')" style=" background-position: center; background-size: cover;" id="div13" >
+            <img src="./img/services/s13.png" class="w-[100%] h-[100%] thumbnail" alt="">
+            <div class="flex justify-between">
+                <div  id="img13" style="background: url('./img/services/boxes/ser13-1.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed13" alt="">
+
+                   <img src="./img/services/boxes/side13-1.png" onClick="Zoom('img13', './img/services/boxes/ser13-1.png');Zoomimg('zoomed13', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side13-2.png" onClick="Zoom('img13', './img/services/boxes/ser13-2.png');Zoomimg('zoomed13', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+         </div>
+        <div class="div1 w-[100%] h-[20rem]" onclick="Box('div14')" style=" background-position: center; background-size: cover;" id="div14" >
+            <img src="./img/services/s14.png" class="w-[100%] h-[100%] thumbnail" alt=""> 
+            <div class="flex justify-between">
+                <div  id="img14" style="background: url('./img/services/boxes/ser14-1.png');" class="rounded-2rem w-[57.2rem] h-[42rem] rounded-[2rem]" alt=""> </div>
+                <div class="flex flex-col justify-between relative">
+                    <img src="./img/zoomed.png" class="zoomed" id="zoomed14" alt="">
+
+                   <img src="./img/services/boxes/side14-1.png" onClick="Zoom('img14', './img/services/boxes/ser14-1.png');Zoomimg('zoomed14', true)" class="w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+                   <img src="./img/services/boxes/side14-2.png" onClick="Zoom('img14', './img/services/boxes/ser14-2.png');Zoomimg('zoomed14', false)" class=" w-[26rem] h-[19.5rem] rounded-[1.5rem]" alt="">
+               </div>
+           </div>
+        </div>
+    </div>
+ 
+    <div class="samplesMb mb-[8rem] w-[80.7rem] m-auto justify-center mt-[5rem] flex-row " style="flex-wrap: wrap; flex-direction: row !important;">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s1.jpg', true )" src="./img/services/s1.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s2.jpg', true )" src="./img/services/s2.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s3.jpg', true )" src="./img/services/s3.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s4.jpg', true )" src="./img/services/s4.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s5.jpg', true )" src="./img/services/s5.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s6.jpg', true )" src="./img/services/s6.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s7.jpg', true )" src="./img/services/s7.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s8.jpg', true )" src="./img/services/s8.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s9.jpg', true )" src="./img/services/s9.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s10.jpg', true )" src="./img/services/s10.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s11.jpg', true )" src="./img/services/s11.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s12.jpg', true )" src="./img/services/s12.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s13.jpg', true )" src="./img/services/s13.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+        <img onclick="OpenImageModal('./MobileServicesImgs/Digitizing/s14.jpg', true )" src="./img/services/s14.png" class="w-[20rem] rounded-[.5rem] m-[1.5rem] " alt="">
+    </div>
+</section>
+
+
+<footer class="mt-[21rem]">
+    <img src="./img/logobt.png" class="m-auto w-[156.7rem] h-[12.7rem]" alt="">
+
+
+    <div class="middle flex w-[156.6rem] justify-between m-auto items-center mt-[6rem]">
+        <div>
+            <p class="text-[1.8rem] leading-[2.7rem] flex items-center text-[#010405]"><img src="./img/ph.png" class="w-[3rem] mr-[3rem]" alt=""> 0208 205 667</p>
+            <p class="text-[1.8rem] leading-[2.7rem] flex items-center mt-[2rem] text-[#010405]"><img src="./img/mail.png" class="w-[3rem] mr-[3rem]" alt=""> writeyouremail@gmail.com</p>
+        </div>
+        <div class="flex">
+            <a href="" class="text-[1.4rem] flex flex-col items-center"><img src="./img/fb.png" class="mb-[.7rem] w-[4rem]" alt="">Facebook</a>
+            <a href="" class="mx-[12rem] text-[1.4rem] flex flex-col items-center"><img src="./img/ig.png" class="mb-[.7rem] w-[4rem]" alt="">Instagram</a>
+            <a href="" class="text-[1.4rem] flex flex-col items-center"><img src="./img/yt.png" class="mb-[.7rem] w-[4rem]" alt="">Youtube</a>
+        </div>
+        <div class="flex">
+            <div class="flex flex-col items-center justify-center">
+                <a href="" class="text-[1.8rem] leading-[2.7rem] mb-[2rem] text-[#2A163F]">Privacy Policy</a>
+                <a href="./about.html" class="text-[1.8rem] leading-[2.7rem] text-[#2A163F]">About</a>
+            </div>
+            <div class="ml-[6rem] flex flex-col items-center justify-center">
+                <a href="" class="text-[1.8rem] leading-[2.7rem] mb-[2rem] text-[#2A163F]">Terms & Conditions</a>
+                <a href="./contact.html" class="text-[1.8rem] leading-[2.7rem] text-[#2A163F]">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom flex w-[156.6rem] justify-between m-auto mt-[10rem]"  >
+        <div>
+            <p class="text-[2rem] leading-[3rem] uppercase text-[#2A163F]">
+                Get Latest Updates
+            </p>
+            <h2 class="text-[8rem] leading-[12rem]  text-[##2A163F] font-[400]"
+            style="text-transform: uppercase;">
+            Subscribe<span class="font-[600]"> <br>Newsletter</span>
+           
+        </h2>
+        </div>
+
+        <form action="" class="flex flex-col justify-center items-center">
+            <div class="flex ">
+                <input style="border-bottom: 1px solid rgba(9, 5, 13, 0.60);" class="  flex text-[1.6rem] text-[#09050D99]  border-[none] justify-start items-center pl-[3rem] w-[33.2rem] h-[5rem] rounded-[.5rem] bg-[#0000001A]" placeholder="Full Name">
+                <input style="border-bottom: 1px solid rgba(9, 5, 13, 0.60);" class="ml-[4rem] flex text-[1.6rem] text-[#09050D99]  border-[none] justify-start items-center pl-[3rem] w-[33.2rem] h-[5rem] rounded-[.5rem] bg-[#0000001A]" placeholder="Phone Number (Optional)" >
+                   
+            </div>
+            
+            <input style="border-bottom: 1px solid rgba(9, 5, 13, 0.60);" class=" mt-[2rem] mb-[2.5rem] flex justify-start items-center pl-[3rem] w-[70.4rem] h-[5rem] rounded-[.5rem] bg-[#0000001A] text-[1.6rem] text-[#09050D99] border-[none]" placeholder="Enter Email Address">
+                   
+               
+            <button href=""
+                        class="rounded-[.5rem] text-white text-[1.6rem] hover leadng-[2.4rem] tracking-[8%] w-[17.4rem] h-[5rem] bg-[#010405] mr-[7.6rem]"><div class="div">Subscribe</button>
+        </form>
+    </div>
+</footer>
+<script>
+
+    // document.querySelector(`#div1 .thumbnail`).style.display = "none"
+    // document.querySelector(`#${id} .flex`).style.display = "none"
+    document.querySelector(`#div1 .thumbnail`).style.display = "none"
+    console.log(document.querySelector(`#div1`))
+    document.querySelector(`#div2 .flex`).style.display = "none"
+    document.querySelector(`#div3 .flex`).style.display = "none"
+    document.querySelector(`#div4 .flex`).style.display = "none"
+    document.querySelector(`#div5 .flex`).style.display = "none"
+    document.querySelector(`#div6 .flex`).style.display = "none"
+    document.querySelector(`#div7 .flex`).style.display = "none"
+    document.querySelector(`#div8 .flex`).style.display = "none"
+    document.querySelector(`#div9 .flex`).style.display = "none"
+    document.querySelector(`#div10 .flex`).style.display = "none"
+    document.querySelector(`#div11 .flex`).style.display = "none"
+    document.querySelector(`#div12 .flex`).style.display = "none"
+    document.querySelector(`#div13 .flex`).style.display = "none"
+    document.querySelector(`#div14 .flex`).style.display = "none"
+
+
+    const Box = (id)=>{
+        const divs = document.querySelectorAll(".parent .div1")
+        for (let index = 0; index < divs.length; index++) {
+            const element = divs[index];
+            element.style.height= "20rem"
+    element.children[0].style.display = "flex"
+    element.children[1].style.display = "none"
+    // element.children[5].style.display = "none"
+
+
+        }
+if(id == "div1"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 3 / 5" 
+    div2.style.gridArea  = "1 / 5 / 2 / 6" 
+    div3.style.gridArea  = "1 / 6 / 2 / 7" 
+    div4.style.gridArea  = "1 / 7 / 2 / 8" 
+    div5.style.gridArea  = "2 / 5 / 3 / 6" 
+    div6.style.gridArea  = "2 / 6 / 3 / 7" 
+    div7.style.gridArea  = "2 / 7 / 3 / 8" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div2"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 3 / 6" 
+    div3.style.gridArea  = "1 / 6 / 2 / 7" 
+    div4.style.gridArea  = "1 / 7 / 2 / 8" 
+    div5.style.gridArea  = "2 / 1 / 3 / 2" 
+    div6.style.gridArea  = "2 / 6 / 3 / 7" 
+    div7.style.gridArea  = "2 / 7 / 3 / 8" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div3"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 3 / 7" 
+    div4.style.gridArea  = "1 / 7 / 2 / 8" 
+    div5.style.gridArea  = "2 / 1 / 3 / 2" 
+    div6.style.gridArea  = "2 / 2 / 3 / 3" 
+    div7.style.gridArea  = "2 / 7 / 3 / 8" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div4"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 3 / 8" 
+    div5.style.gridArea  = "2 / 1 / 3 / 2" 
+    div6.style.gridArea  = "2 / 2 / 3 / 3" 
+    div7.style.gridArea  = "2 / 3 / 3 / 4" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div5"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 5 / 2 / 6" 
+    div2.style.gridArea  = "1 / 6 / 2 / 7" 
+    div3.style.gridArea  = "1 / 7 / 2 / 8" 
+    div4.style.gridArea  = "2 / 5 / 3 / 6" 
+    div5.style.gridArea  = "1 / 1 / 3 / 5" 
+    div6.style.gridArea  = "2 / 6 / 3 / 7" 
+    div7.style.gridArea  = "2 / 7 / 3 / 8" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div6"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 6 / 2 / 7" 
+    div3.style.gridArea  = "1 / 7 / 2 / 8" 
+    div4.style.gridArea  = "2 / 1 / 3 / 2" 
+    div5.style.gridArea  = "2 / 6 / 3 / 7" 
+    div6.style.gridArea  = "1 / 2 / 3 / 6" 
+    div7.style.gridArea  = "2 / 7 / 3 / 8" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div7"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 7 / 2 / 8" 
+    div4.style.gridArea  = "2 / 1 / 3 / 2" 
+    div5.style.gridArea  = "2 / 2 / 3 / 3" 
+    div6.style.gridArea  = "2 / 7 / 3 / 8" 
+    div7.style.gridArea  = "1 / 3 / 3 / 7" 
+    div8.style.gridArea  = "3 / 1 / 4 / 2" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div8"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "2 / 1 / 3 / 2" 
+    div5.style.gridArea  = "2 / 2 / 3 / 3" 
+    div6.style.gridArea  = "2 / 3 / 3 / 4" 
+    div7.style.gridArea  = "3 / 1 / 4 / 2" 
+    div8.style.gridArea  = "1 / 4 / 3 / 8" 
+    div9.style.gridArea  = "3 / 2 / 4 / 3" 
+    div10.style.gridArea = "3 / 3 / 4 / 4" 
+    div11.style.gridArea = "3 / 4 / 4 / 5" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div9"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 2 / 5" 
+    div5.style.gridArea  = "1 / 5 / 2 / 6" 
+    div6.style.gridArea  = "1 / 6 / 2 / 7" 
+    div7.style.gridArea  = "1 / 7 / 2 / 8" 
+    div8.style.gridArea  = "2 / 5 / 3 / 6" 
+    div9.style.gridArea  = "2 / 1 / 4 / 5" 
+    div10.style.gridArea = "2 / 6 / 3 / 7" 
+    div11.style.gridArea = "2 / 7 / 3 / 8" 
+    div12.style.gridArea = "3 / 5 / 4 / 6" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div10"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 2 / 5" 
+    div5.style.gridArea  = "1 / 5 / 2 / 6" 
+    div6.style.gridArea  = "1 / 6 / 2 / 7" 
+    div7.style.gridArea  = "1 / 7 / 2 / 8" 
+    div8.style.gridArea  = "2 / 1 / 3 / 2" 
+    div9.style.gridArea  = "2 / 6 / 3 / 7" 
+    div10.style.gridArea = "2 / 2 / 4 / 6" 
+    div11.style.gridArea = "2 / 7 / 3 / 8" 
+    div12.style.gridArea = "3 / 1 / 4 / 2" 
+    div13.style.gridArea = "3 / 6 / 4 / 7" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div11"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 2 / 5" 
+    div5.style.gridArea  = "1 / 5 / 2 / 6" 
+    div6.style.gridArea  = "1 / 6 / 2 / 7" 
+    div7.style.gridArea  = "1 / 7 / 2 / 8" 
+    div8.style.gridArea  = "2 / 1 / 3 / 2" 
+    div9.style.gridArea  = "2 / 2 / 3 / 3" 
+    div10.style.gridArea = "2 / 7 / 3 / 8" 
+    div11.style.gridArea = "2 / 3 / 4 / 7" 
+    div12.style.gridArea = "3 / 1 / 4 / 2" 
+    div13.style.gridArea = "3 / 2 / 4 / 3" 
+    div14.style.gridArea = "3 / 7 / 4 / 8" 
+}
+if(id == "div12"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 2 / 5" 
+    div5.style.gridArea  = "1 / 5 / 2 / 6" 
+    div6.style.gridArea  = "1 / 6 / 2 / 7" 
+    div7.style.gridArea  = "1 / 7 / 2 / 8" 
+    div8.style.gridArea  = "2 / 1 / 3 / 2" 
+    div9.style.gridArea  = "2 / 2 / 3 / 3" 
+    div10.style.gridArea = "2 / 3 / 3 / 4" 
+    div11.style.gridArea = "3 / 1 / 4 / 2" 
+    div12.style.gridArea = "2 / 4 / 4 / 8" 
+    div13.style.gridArea = "3 / 2 / 4 / 3" 
+    div14.style.gridArea = "3 / 3 / 4 / 4" 
+}
+if(id == "div13"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 2 / 5" 
+    div5.style.gridArea  = "1 / 5 / 2 / 6" 
+    div6.style.gridArea  = "1 / 6 / 2 / 7" 
+    div7.style.gridArea  = "1 / 7 / 2 / 8" 
+    div8.style.gridArea  = "2 / 1 / 3 / 2" 
+    div9.style.gridArea  = "2 / 2 / 3 / 3" 
+    div10.style.gridArea = "2 / 3 / 3 / 4" 
+    div11.style.gridArea = "3 / 1 / 4 / 2" 
+    div12.style.gridArea = "3 / 2 / 4 / 3" 
+    div13.style.gridArea = "2 / 4 / 4 / 8" 
+    div14.style.gridArea = "3 / 3 / 4 / 4" 
+}
+if(id == "div14"){
+    document.getElementById(id).style.height = "40rem"
+    document.querySelector(`#${id} .flex`).style.display = "flex"
+    document.querySelector(`#${id} .thumbnail`).style.display = "none"
+    div1.style.gridArea  = "1 / 1 / 2 / 2" 
+    div2.style.gridArea  = "1 / 2 / 2 / 3" 
+    div3.style.gridArea  = "1 / 3 / 2 / 4" 
+    div4.style.gridArea  = "1 / 4 / 2 / 5" 
+    div5.style.gridArea  = "1 / 5 / 2 / 6" 
+    div6.style.gridArea  = "1 / 6 / 2 / 7" 
+    div7.style.gridArea  = "1 / 7 / 2 / 8" 
+    div8.style.gridArea  = "2 / 1 / 3 / 2" 
+    div9.style.gridArea  = "2 / 2 / 3 / 3" 
+    div10.style.gridArea = "2 / 3 / 3 / 4" 
+    div11.style.gridArea = "3 / 1 / 4 / 2" 
+    div12.style.gridArea = "3 / 2 / 4 / 3" 
+    div13.style.gridArea = "3 / 3 / 4 / 4" 
+    div14.style.gridArea = "2 / 4 / 4 / 8" 
+}
+}
+
+const click = (id, path)=>{
+    const img = document.getElementById(id)
+    const imgpath = document.getElementById(path)
+    // console.log(img.src, path)
+    // document.getElementById("img1").src = "./img/services/s14.png"
+}
+const Zoom = (id, path)=>{
+document.getElementById(id).style.background = `url('${path}')`
+document.getElementById(id).style.backgroundPosition = "center"
+document.getElementById(id).style.backgroundSize = "cover"
+console.log("first", path)
+}
+
+
+const Zoomimg = (id, value)=>{
+    const img = document.getElementById(id)
+    console.log(img)
+    if(value){
+        img.style.top = "0"
+        img.style.bottom = "auto"
+    }else{
+        img.style.top = "auto"
+        img.style.bottom = "0"
+
+    }
+}
+
+
+const OpenImageModal = (img, value)=>{
+    const modal = document.querySelector(".modal")
+    const ModalImg = document.querySelector(".modal img")
+    if(value){
+
+        modal.style.display = "flex"
+        ModalImg.src = img
+    }else{
+        modal.style.display = "none"
+    }
+}
+
+const boxes = document.querySelectorAll(".section2")
+
+const changeBox = (id)=>{
+for (let index = 0; index < boxes.length; index++) {
+    const element = boxes[index];
+    element.style.display = "none"
+}
+document.getElementById(id).style.display ="block"
+document.querySelector(`#div1 .thumbnail`).style.display = "none"
+    document.querySelector(`#div2 .flex`).style.display = "none"
+    document.querySelector(`#div3 .flex`).style.display = "none"
+    document.querySelector(`#div4 .flex`).style.display = "none"
+    document.querySelector(`#div5 .flex`).style.display = "none"
+    document.querySelector(`#div6 .flex`).style.display = "none"
+    document.querySelector(`#div7 .flex`).style.display = "none"
+    document.querySelector(`#div8 .flex`).style.display = "none"
+    document.querySelector(`#div9 .flex`).style.display = "none"
+    document.querySelector(`#div10 .flex`).style.display = "none"
+    document.querySelector(`#div11 .flex`).style.display = "none"
+    document.querySelector(`#div12 .flex`).style.display = "none"
+    document.querySelector(`#div13 .flex`).style.display = "none"
+    document.querySelector(`#div14 .flex`).style.display = "none"
+}
+
+const Navbar = ()=>{
+    document.getElementById("navbarmb").classList.toggle("activeNav")
+    console.log(document.getElementById("navbarmb").classList)
+}
+</script>
+</body>
+</html>
